@@ -1,0 +1,145 @@
+/* Fundo com padrão repetido (clássico dos anos 2000) */
+body {
+    background-color: #ce914b; /* girassol!!!! */
+    background-image: url('https://i.pinimg.com/1200x/b7/82/9f/b7829f3e17c0af5b9673a61aefe9920f.jpg');
+    background-repeat: no-repeat;  /* Não repete a imagem */
+    background-position: center;   /* Centraliza a imagem na tela */
+    background-size: cover;
+    font-family: "Courier New", Courier, monospace;
+    cursor: url('https://www.rw-designer.com/cursor-view/121181.png'), auto;
+    margin: 0;
+    padding: 20px;
+}
+
+/* O container principal que centraliza o blog */
+.content-wrapper {
+    width: 850px; /* Largura fixa típica da época */
+    margin: 0 auto;
+    background: #fff;
+    border: 4px double #ff0066; /* Borda dupla chamativa */
+    padding: 15px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+}
+
+/* Cabeçalho Retrô */
+.blog-header {
+    text-align: center;
+    background: #66ccff;
+    background-image:url('https://i.pinimg.com/1200x/19/26/88/19268890c01a48186e65049caf70878b.jpg') ;
+    background-repeat: no-repeat;  /* Não repete a imagem */
+    background-position: center;   /* Centraliza a imagem na tela */
+    background-size: cover;
+    padding: 40px;
+    border: 2px dashed #fff;
+    color: #fff;
+    text-shadow: 2px 2px #ff0066;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    shape-image-threshold: circle;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+    
+    margin-bottom: 10px;
+}
+
+/* Navegação / Menu */
+.social-links {
+    text-align: center;
+    padding: 10px;
+    background: #eee;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+}
+
+.social-links a {
+    color: #ff0066;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.social-links a:hover {
+    background: #ff0066;
+    color: #fff;
+}
+
+/* Organização do Conteúdo (Postagens) */
+.post-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-card {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+/* Estilo do Topo do Post (Barra Rosa) */
+.post-card::before {
+    content: "★ Lendo Postagem...";
+    display: block;
+    background: #ffccff;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 1px dotted #ccc;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.category {
+    background: #66ccff;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.post-content h2 {
+    color: #ff0066;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.post-content p {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Rodapé do Post */
+time {
+    display: block;
+    margin-top: 15px;
+    background: #f9f9f9;
+    padding: 5px;
+    font-size: 11px;
+    text-align: right;
+    border-top: 1px dotted #ccc;
+}
+
+/* Scrollbar personalizada para fechar o visual */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #ffccff;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff0066;
+    border: 2px solid #ffccff;
+}
